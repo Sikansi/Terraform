@@ -23,12 +23,12 @@ resource "digitalocean_kubernetes_cluster" "k8s_estudos_terraform" {
   }
 }
 
-resource "digitalocean_kubernetes_node_pool" "node_premium" {
-  cluster_id = digitalocean_kubernetes_cluster.k8s_estudos_terraform.id
-  name       = "premium"
-  size       = "s-4vcpu-8gb"
-  node_count = 2
-}
+# resource "digitalocean_kubernetes_node_pool" "node_premium" {
+#   cluster_id = digitalocean_kubernetes_cluster.k8s_estudos_terraform.id
+#   name       = "premium"
+#   size       = "s-4vcpu-8gb"
+#   node_count = 2
+# }
 
 variable "do_token" {}
 
